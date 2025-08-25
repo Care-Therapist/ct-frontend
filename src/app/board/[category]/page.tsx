@@ -17,7 +17,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
       title={categoryConfig.name}
       description={categoryConfig.description}
       boards={categoryConfig.children.map((child) => ({
-        href: `/board/${params.category}/${child.slug}`,
+        href: `/board/${params.category}/${child.name}`,
         label: child.label,
         emoji: child.emoji,
       }))}
